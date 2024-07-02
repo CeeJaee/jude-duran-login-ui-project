@@ -1,0 +1,117 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("matcha_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #5e734e;
+}
+
+.container{
+    /* border: 1px green solid; */
+    width: 40%;
+    height: 60%;
+    border-radius: 30px;
+    background-color: #ddc7ad;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 1px 0 100px rgba(0, 0, 0, 1)  ; 
+}
+.login{
+    /* border: 1px red solid; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login h2{
+    color: #5e734e;;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: -5px;
+}
+
+.login-input{
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    text-indent: 10px;
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    
+    display: flex;
+    align-self: flex-start;
+}
+#forgot-details{
+    color: black;
+    margin: 5px;
+    display: flex;
+    align-self: flex-start;
+}
+#forgot-details:hover{
+    color: white;
+}
+#login-button{
+    width: 40%;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #5e734e;;
+    color: black;
+}
+#login-button:hover{
+    background-color: #3c4932
+}
+
+.alt-login{
+    /* border: 1px blue solid; */
+    width: 50%;
+    height: 30%;
+    margin-top: 50px;
+    color: #5e734e;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alt-login span{
+    margin: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+
+}
+.alt-login button{
+    width: 40%;
+    border-radius: 30px;
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#google-button{
+    background-color: #dd4b39;
+}
+#google-button:hover{
+    background-color: #c53727;
+}
+#facebook-button{
+    background-color: #3b5998;
+}
+#facebook-button:hover{
+    background-color: #2d4373;
+}
+#x-button{
+    background-color: black;
+    color: white;
+}
+#x-button:hover{
+    background-color: rgb(99, 98, 98);
+}
