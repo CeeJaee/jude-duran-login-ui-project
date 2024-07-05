@@ -15,6 +15,8 @@ body{
     /* border: 1px green solid; */
     width: 40%;
     height: 60%;
+    min-width: 300px;
+    min-height: 250px;
     border-radius: 30px;
     background-color: #ddc7ad;
     overflow: hidden;
@@ -64,7 +66,7 @@ body{
     width: 40%;
     height: 30px;
     border-radius: 30px;
-    background-color: #5e734e;;
+    background-color: #5e734e;
     color: black;
 }
 #login-button:hover{
@@ -88,7 +90,7 @@ body{
 .alt-login span{
     margin: -20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
 
 }
 .alt-login button{
