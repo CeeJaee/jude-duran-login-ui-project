@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scratch1</title>
+    <title>Jude Duran Login UI Project</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -11,6 +11,7 @@
     <div class="container">
         <div class="side">
             <h1><em>All Things Matcha.</em></h1>
+        
         </div>
         <div class="login">
             <h1>The Matcha House</h1>
@@ -18,12 +19,14 @@
             <input type="text" class="login-input" placeholder="Enter username here">
             <input type="password" class="login-input" placeholder="Enter password here">
             <a id="forgot-details" href="#" class="forgot-password">Forgot your password?</a>
+            <p class="member">Not a member? <a id="sign-up" href="#">Sign up</a></p>
             <input type="submit" id="login-button" value="Login">
             <hr class="round">
         </div>
         <div class="alt-login">
             <h3>or login with:</h3>
             <br>
+                <button id="guest-button"><i class="fa-solid fa-user"></i>  Guest</button>
                 <button id="google-button"><i class="fa-brands fa-google"></i>  Google</button>
                 <button id="facebook-button"><i class="fa-brands fa-facebook"></i>  Facebook</button>
                 <button id="x-button"><i class="fa-brands fa-apple"></i>  Apple</button>
