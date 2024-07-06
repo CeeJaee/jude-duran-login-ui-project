@@ -30,7 +30,7 @@ body{
 .login{
     /* border: 1px red solid; */
     width: 50%;
-    height: 50%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,31 +40,27 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: -5px;
 }
-
 .login-input{
-    width: 100%;
-    height: 30px;
+    width: 80%;
+    height: 50%;
     border-radius: 30px;
     text-indent: 10px;
     margin: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
     
-    display: flex;
-    align-self: flex-start;
 }
 #forgot-details{
     color: black;
     margin: 5px;
-    display: flex;
-    align-self: flex-start;
 }
 #forgot-details:hover{
     color: white;
 }
 #login-button{
     width: 40%;
-    height: 30px;
+    height: 20%;
+    margin-bottom: 10px;
     border-radius: 30px;
     background-color: #5e734e;
     color: black;
@@ -73,13 +69,18 @@ body{
     background-color: #3c4932
 }
 
+hr.round{
+    width: 90%;
+    padding-top: 0px;
+    border-top: 5px solid #5e734e;
+    border-radius: 5px;
+}
+
 .alt-login{
     /* border: 1px blue solid; */
     width: 50%;
-    height: 50%;
-    /* margin-top: 50px; */
+    height: 35%;
     color: #5e734e;
-    background-color: #2d4373;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -89,13 +90,14 @@ body{
 }
 
 .alt-login span{
-    /* margin: -20px; */
+    padding-top: 10px;
+    margin-bottom: -10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2em;
-
 }
 .alt-login button{
     width: 40%;
+    height: 60%;
     border-radius: 30px;
     margin: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -129,4 +131,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
 }
