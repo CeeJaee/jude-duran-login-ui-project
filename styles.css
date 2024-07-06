@@ -21,7 +21,7 @@ body{
     height: 70%;
     border-radius: 30px;
     overflow: hidden;
-    background-color: #ddc7ad;
+    background-color: black;
     box-shadow: 1px 0 100px rgba(255, 255, 255, 0.2);
 
     display: flex;
@@ -33,7 +33,7 @@ body{
 .login{
     width: 40%;
     height: 65%;
-    /* background-color: brown; */
+    background-color: #ddc7ad;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,11 +43,11 @@ body{
 .alt-login{
     width: 40%;
     height: 35%;
+    background-color: #ddc7ad;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: cadetblue; */
 }
 
 .side{
@@ -59,9 +59,49 @@ body{
     background-position: center center;
     color: white;
 
+    overflow: hidden;
+    position: relative;
+    animation: change 20s infinite;
+
     display: flex;
     justify-content: center;
-
+}
+.side::before {
+    content: ''; /* Create pseudo-element for overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@keyframes change{
+    0%{
+        background-image: url(images/blackBG-matcha-login.jpg);
+    }
+    20%{
+        background-image: url(images/blackBG-matcha-login.jpg);
+    }
+    25%{
+        background-image: url(images/matcha-cookies.jpg);
+    }
+    45%{
+        background-image: url(images/matcha-cookies.jpg);
+    }
+    50%{
+        background-image: url(images/matcha-pancakes2.jpg);
+    }
+    70%{
+        background-image: url(images/matcha-pancakes2.jpg);
+    }
+    75%{
+        background-image: url(images/matcha-ice-cream.jpg);
+    }
+    95%{
+        background-image: url(images/matcha-ice-cream.jpg);
+    }
+    100%{
+        background-image: url(images/blackBG-matcha-login.jpg);
+    }
 }
 
 .login h1{
@@ -79,7 +119,7 @@ body{
 
 .login h2{
     color: #5e734e;
-    font-family: myFont;
+    font-family: quickSandBold;
     font-size: 25px;
     margin-bottom: 5px;
     margin-left: -120px;
@@ -103,22 +143,34 @@ body{
 #forgot-details:hover{
     color: white;
 }
+.member{
+    font-family: myFont;
+    color: black;
+    font-size: 15px;
+    margin-left: -165px;
+    margin-top: 2px;
+}
+#sign-up{
+    color: black;
+}
+#sign-up:hover{
+    color: white;
+}
 #login-button{
     width: 40%;
-    height: 30px;
+    height: 35px;
     border-radius: 30px;
     font-family: myFont;
     background-color: #5e734e;
     color: black;
-    margin: 20px;
+    margin: 5px;
 }
 #login-button:hover{
     background-color: #3c4932
 }
 
-
 .alt-login h3{
-    font-family: myFont;
+    font-family: quickSandBold;
     font-size: 1.2em;
     color: #5e734e;
 
@@ -132,6 +184,12 @@ body{
     border-radius: 30px;
     font-family: myFont;
     margin: 5px;
+}
+#guest-button{
+    background-color: #787674;
+}
+#guest-button:hover{
+    background-color: #535252;
 }
 #google-button{
     background-color: #dd4b39;
@@ -156,6 +214,8 @@ body{
 .side h1{
     font-family: quickSandBold;
     font-size: 50px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 hr.round{
