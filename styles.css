@@ -1,3 +1,7 @@
+@font-face {
+    font-family: myFont;
+    src: url(Quicksand-Regular.otf);
+}
 body{
     height: 100vh;
     margin: 0;
@@ -24,8 +28,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-shadow: 1px 0 100px rgba(255, 255, 255, 0.2)  ; 
+    font-family: myFont;
+    box-shadow: 1px 0 100px rgba(255, 255, 255, 0.2); 
 }
 .login{
     /* border: 1px red solid; */
@@ -35,35 +39,45 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.login h1{
+    color: #5e734e;;
+    font-family: myFont;
+    margin-bottom: -5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .login h2{
     color: #5e734e;;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: myFont;
     margin-bottom: -5px;
 }
 .login-input{
     width: 80%;
-    height: 50%;
+    height: 20%;
     border-radius: 30px;
     text-indent: 10px;
     margin: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: myFont;
     font-size: 24px;
     
 }
 #forgot-details{
     color: black;
-    margin: 5px;
+    font-size: 14px;
+    margin: 10px;
 }
 #forgot-details:hover{
     color: white;
 }
 #login-button{
     width: 40%;
-    height: 20%;
+    height: 10%;
     margin-bottom: 10px;
     border-radius: 30px;
     background-color: #5e734e;
     color: black;
+    font-family: myFont;
 }
 #login-button:hover{
     background-color: #3c4932
@@ -71,7 +85,7 @@ body{
 
 hr.round{
     width: 90%;
-    padding-top: 0px;
+    margin: 5px;
     border-top: 5px solid #5e734e;
     border-radius: 5px;
 }
@@ -82,25 +96,24 @@ hr.round{
     height: 35%;
     color: #5e734e;
     font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family: myFont;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .alt-login span{
-    padding-top: 10px;
-    margin-bottom: -10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+    margin-bottom: -15px;
+    font-family: myFont;
     font-size: 1.2em;
 }
 .alt-login button{
     width: 40%;
     height: 60%;
     border-radius: 30px;
-    margin: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    font-family: myFont;
 }
 #google-button{
     background-color: #dd4b39;
