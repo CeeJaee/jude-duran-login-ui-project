@@ -2,118 +2,136 @@
     font-family: myFont;
     src: url(Quicksand-Regular.otf);
 }
+@font-face {
+    font-family: quickSandBold;
+    src: url(Quicksand-Bold.otf);
+}
 body{
     height: 100vh;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    display: flex; /* Ensure body stretches to full height */
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
     background-color: black;
-    /* background-image: url("matcha-bg2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
-    color: #5e734e;
 }
 
 .container{
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     border-radius: 30px;
-    background-color: #ddc7ad;
     overflow: hidden;
+    background-color: #ddc7ad;
+    box-shadow: 1px 0 100px rgba(255, 255, 255, 0.2);
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: myFont;
-    box-shadow: 1px 0 100px rgba(255, 255, 255, 0.2); 
+
 }
+
 .login{
-    /* border: 1px red solid; */
-    width: 50%;
+    width: 40%;
     height: 65%;
+    /* background-color: brown; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+
+.alt-login{
+    width: 40%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: cadetblue; */
+}
+
+.side{
+    width: 60%;
+    height: 100%;
+    background-image: url("images/blackBG-matcha-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+}
+
 .login h1{
-    color: #5e734e;;
     font-family: myFont;
-    margin-bottom: -5px;
+    color: #ddc7ad;
+    font-size: 40px;
+    background-color: #5e734e;
+    border-radius: 30px;
+    padding: 10px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .login h2{
-    color: #5e734e;;
+    color: #5e734e;
     font-family: myFont;
-    margin-bottom: -5px;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-left: -120px;
 }
+
 .login-input{
     width: 80%;
-    height: 20%;
+    height: 25px;
     border-radius: 30px;
     text-indent: 10px;
-    margin: 5px;
     font-family: myFont;
     font-size: 24px;
-    
+    margin: 5px;
 }
 #forgot-details{
+    font-family: myFont;
     color: black;
-    font-size: 14px;
-    margin: 10px;
+    margin-left: -170px;
+    font-size: 15px;
 }
 #forgot-details:hover{
     color: white;
 }
 #login-button{
     width: 40%;
-    height: 10%;
-    margin-bottom: 10px;
+    height: 30px;
     border-radius: 30px;
+    font-family: myFont;
     background-color: #5e734e;
     color: black;
-    font-family: myFont;
+    margin: 20px;
 }
 #login-button:hover{
     background-color: #3c4932
 }
 
-hr.round{
-    width: 90%;
-    margin: 5px;
-    border-top: 5px solid #5e734e;
-    border-radius: 5px;
-}
 
-.alt-login{
-    /* border: 1px blue solid; */
-    width: 50%;
-    height: 35%;
-    color: #5e734e;
-    font-weight: bold;
-    font-family: myFont;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.alt-login span{
-    padding-top: 20px;
-    margin-bottom: -15px;
+.alt-login h3{
     font-family: myFont;
     font-size: 1.2em;
+    color: #5e734e;
+
+    margin-top: -10px;
+    margin-bottom: -10px;
+
 }
 .alt-login button{
     width: 40%;
-    height: 60%;
+    height: 15%;
     border-radius: 30px;
-    margin-bottom: 5px;
     font-family: myFont;
+    margin: 5px;
 }
 #google-button{
     background-color: #dd4b39;
@@ -135,17 +153,13 @@ hr.round{
     background-color: rgb(99, 98, 98);
 }
 
-.side{
-    width: 50%;
-    height: 100%;
-    /* background-color: #3c4932; */
+.side h1{
+    font-family: quickSandBold;
+    font-size: 50px;
+}
 
-    background-image: url("blackBG-matcha-login.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: white;
-
-    display: flex;
-    justify-content: center;
+hr.round{
+    width: 90%;
+    border-top: 5px solid #5e734e;
+    border-radius: 5px;
 }
